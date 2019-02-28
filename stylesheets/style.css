@@ -25,11 +25,11 @@ body {
   background-size: cover;
   background-position: center;
   padding-right: 0px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .background-spring::before {
-  content: "";
+  content: '';
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -51,11 +51,11 @@ body {
   background-size: cover;
   background-position: center;
   padding-right: 0px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .background-summer::before {
-  content: "";
+  content: '';
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -77,11 +77,11 @@ body {
   background-size: cover;
   background-position: center;
   padding-right: 0px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .background-autumn::before {
-  content: "";
+  content: '';
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -103,11 +103,11 @@ body {
   background-size: cover;
   background-position: center;
   padding-right: 0px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .background-winter::before {
-  content: "";
+  content: '';
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -130,9 +130,8 @@ body {
   font-size: 46px;
   font-weight: 700;
   padding: 0;
-  white-space: nowrap;  
+  white-space: nowrap;
 }
-
 
 .background-autumn button {
   position: absolute;
@@ -140,7 +139,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .background-autumn:hover button {
@@ -154,7 +153,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .background-spring:hover button {
@@ -168,7 +167,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .background-summer:hover button {
@@ -182,7 +181,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .background-winter:hover button {
@@ -195,6 +194,28 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.navbar {
+  width: 100%;
+  height: 10vh;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background: #fff;
+  z-index: 111;
+}
+
+.navbar-img {
+  height: 100%;
+}
+
+.navbar-hashtag {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-10%, -50%);
+  color: #333;
+  font-size: 30px;
+}
 
 @media (max-width: 768px) {
   .container {
@@ -206,7 +227,7 @@ body {
   }
 
   .uk-button {
-    display:none !important;
+    display: none !important;
   }
 
   .section span {
