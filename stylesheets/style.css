@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
+  overflow: hidden;
 }
 
 .section {
@@ -12,6 +13,7 @@ body {
   width: 100%;
   position: relative;
   overflow: hidden;
+  padding-top: 10%;
 }
 
 .section:hover .background-spring {
@@ -45,7 +47,7 @@ body {
 }
 
 .section:hover .background-summer {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .background-summer {
@@ -71,7 +73,7 @@ body {
 }
 
 .section:hover .background-autumn {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .background-autumn {
@@ -97,7 +99,7 @@ body {
 }
 
 .section:hover .background-winter {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .background-winter {
