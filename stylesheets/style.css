@@ -18,6 +18,10 @@ body {
   transform: scale(1.1);
 }
 
+.hidden {
+  opacity: 0;
+}
+
 .background-spring {
   width: 100%;
   height: 100%;

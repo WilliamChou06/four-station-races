@@ -18,13 +18,16 @@
     <title>Cuatro Estaciones Bolivia</title>
   </head>
   <body>
-  
-    <div class="navbar">
-      <img class="navbar-img" src="http://creando.com.bo/c4e/otono/wp-content/uploads/2019/02/l1.jpg" alt="">
+    <div class="navbar uk-animation-slide-left">
+      <img
+        class="navbar-img"
+        src="http://creando.com.bo/c4e/otono/wp-content/uploads/2019/02/l1.jpg"
+        alt=""
+      />
       <span class="navbar-hashtag">#EstacionVerano2019</span>
     </div>
     <div class="container">
-      <div class="section">
+      <div class="section hidden">
         <a href=""
           ><div class="background-summer">
             <button class="uk-button uk-button-secondary">Inscribete</button>
@@ -32,7 +35,7 @@
         >
         <!-- <span>VERANO</span> -->
       </div>
-      <div class="section">
+      <div class="section hidden">
         <a href="inscribete.net"
           ><div class="background-autumn">
             <button class="uk-button uk-button-secondary ">Inscribete</button>
@@ -40,7 +43,7 @@
         >
         <!-- <span>OTOÑO</span> -->
       </div>
-      <div class="section">
+      <div class="section hidden">
         <a href=""
           ><div class="background-winter">
             <button class="uk-button uk-button-secondary">Inscribete</button>
@@ -49,7 +52,7 @@
 
         <!-- <span>INVIERNO</span> -->
       </div>
-      <div class="section">
+      <div class="section hidden">
         <a href=""
           ><div class="background-spring">
             <button class="uk-button uk-button-secondary">Inscribete</button>
@@ -61,5 +64,19 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    <script>
+      var sections = document.querySelectorAll('.section');
+      function sectionAnimation(i) {
+        if (i < 0) return;
+
+        setTimeout(function() {
+          sections[i].classList.add('uk-animation-slide-top');
+          sections[i].classList.remove('hidden');
+          sectionAnimation(--i);
+        }, 300);
+      }
+
+      sectionAnimation(sections.length - 1);
+    </script>
   </body>
 </html>
