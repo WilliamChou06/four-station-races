@@ -146,6 +146,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.5s;
+  
 }
 
 .background-autumn:hover button {
@@ -223,8 +224,13 @@ body {
   font-size: 30px;
 }
 
+@media (max-width: 1200px) {
+  
+}
+
 @media (max-width: 768px) {
   .container {
+    padding-top: 6vh;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -239,5 +245,15 @@ body {
   .section span {
     top: 6%;
     display: none;
+  }
+
+  .navbar-img {
+    max-width: 60%;
+    height: 90%;
+  }
+
+  .navbar-hashtag {
+    font-size: 13px;
+
   }
 }
