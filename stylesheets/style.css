@@ -224,10 +224,6 @@ body {
   font-size: 30px;
 }
 
-@media (max-width: 1200px) {
-  
-}
-
 @media (max-width: 768px) {
   .container {
     padding-top: 6vh;

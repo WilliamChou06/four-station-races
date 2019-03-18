@@ -64,19 +64,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
-    <script>
-      var sections = document.querySelectorAll('.section');
-      function sectionAnimation(i) {
-        if (i < 0) return;
-
-        setTimeout(function() {
-          sections[i].classList.add('uk-animation-slide-top');
-          sections[i].classList.remove('hidden');
-          sectionAnimation(--i);
-        }, 300);
-      }
-
-      sectionAnimation(sections.length - 1);
-    </script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
